@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<HTML LANG = "pt-br">
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" type="text/css" href="../main.css">
+		<TITLE> Comandos servidores -  Base negresgo</TITLE>
+	</head>
+	<body>
+		<!--Inicio da tabela-->
+		<center>
+			<table border="1">
+				<br>
+				<h2>Comandos Servidor</h2>
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				<tr>
+					<th>cat /etc/estacoes.lst
+					<th>mostra ip / mac / patrimonio
+				</tr>
+				<tr>
+					<th>sudo /sbin/shutdown -r now
+					<th>reincia o servidor
+				</tr>
+				<tr>
+					<th>sudo /sbin/shutdown -h now
+					<th>desliga o servidor
+				</tr>
+				<tr>
+					<th>setup
+					<th>acesso ao setup do servidor
+				</tr>
+				<tr>
+					<th>sudo prt_reset 
+					<th>para limpar a fila de impressão
+				</tr>
+				<tr>
+					<th>/sbin/ifconfig
+					<th>verificar heart beat
+				</tr>
+				<tr>
+					<th>sudo /usr/sbin/rcdb2 status
+					<th>Status do DB2
+				</tr>
+				<tr>
+					<th>sudo /usr/bin/db2.sh star
+					<th>Iniciar DB2
+				</tr>
+				<tr>
+					<th>sudo /usr/sbin/rcdb2 stop
+					<th>Para o DB2
+				</tr>
+				<tr>
+					<th>sudo conclojacb.sh
+					<th>acessa menu do Concloja
+				</tr>
+				<tr>
+					<th>lpstat -o
+					<th>fila de impressão
+				</tr>
+				<tr>
+					<th>lpstat -d
+					<th>informa impressora como default
+				</tr>
+				<tr>
+					<th>lpstat -s
+					<th>informa impressora como default e as cadastradas
+				</tr>
+				<tr>
+					<th>sudo /usr/bin/mqcheck.sh
+					<th>executar quando não consegue visualizar documentos digitalizados
+				</tr>
+				<tr>
+					<th>killall -u mXXXXXXXX (matrícula)
+					<th>derrubar usuário no servidor
+				</tr>
+				<th>sudo /usr/bin/mqcheck.sh
+				<th>MQ digitalização de documentos
+				<tr>
+					<th>sudo /usr/bin/washdesk.sh status
+					<th>Verificar o status do WAS (controle de mercadoria)   
+				</tr>
+				<tr>
+					<th>sudo prt_reset
+					<th>Acessar funções (1-Display / 2-Ativar / 3-Desativar / 4-Fila de impressão / 5-Cancelar fila de impressão / 6-Sair)
+				</tr>
+				<tr>
+					<th>export LANG=pt_BR
+					<th>Comando para acessar o Setup
+				</tr>
+				<tr>
+					<th>sudo smbpasswd -a (matricula) + enter
+					<th>Comando para alterar senha do Linux
+				</tr>
+				<tr>
+					<th>cd /home/prodpdv/mfd
+					<th>Acessa o diretório repositório dos espelhos MFD no Servidor Primário
+				</tr>
+				<tr>
+					<th>cd /tftpboot/pdv/var/serpdv
+					<th>Acessa o diretório das log do Concentrador de PDV's
+				</tr>
+				</tr>
+				<tr>
+					<th>tail -f jdebug
+					<th>Visualiza as logs atuais do Concentrador Loja e Concentrador de PDV's
+				<tr>
+					<th>vi jdebug
+					<th>Visualiza logs anteriores do Concentrador de PDV's
+				</tr>
+				<tr>
+					<th>cd /var/concloja
+					<th>Acessa o diretório das logs do Concentrador Loja
+				</tr>
+				<tr>
+					<th>cd /var/db/mfd
+					<th>Acessa o diretório repositório dos espelhos MFD no PDV
+				</tr>
+				<tr>
+					<th>cd /var/log
+					<th>Acessa o diretório das logs do Sistema Entrega mercadoria
+				</tr>
+				<tr>
+					<th>cd /var/pdv
+					<th>Acessa o diretório das logs do PDV
+				</tr>
+				<tr>
+					<th>cd entregaMercadoriaLoja/
+					<th>Acessa o diretório das logs do Sistema Entrega de mercadoria
+				<tr>
+					<th>tail -f jentregaweb.log
+					<th>visualiza as logs atuais do Sistema Entrega Mercadoria
+				</tr>
+				<tr>
+					<th>df -h
+					<th>Ver espaço es disco do servidor
+				</tr>
+				<tr>
+					<th>du -sh *
+					<th>Lista os diretório e espaço utilizado
+				</tr>
+				<tr>
+					<th>free -m
+					<th>Verifica memoria do servidor
+				</tr>
+				<tr>
+					<th>ll
+					<th>Lista os arquivos existentes no diretório
+				</tr>
+				<tr>
+					<th>lpr -P pxxxxxxx arquivo
+					<th>Enviar arquivo para impressora
+				</tr>
+				<tr>
+					<th>menu_pdv.sh
+					<th>Acesso ao script para visualizar logs de PDV
+				</tr>
+				<tr>
+					<th>ps -efax |grep conc
+					<th>Para identificar processo JAVA que consome CPU
+				</tr>
+				<tr>
+					<th>ps -efax |grep conc
+					<th>Para identificar processo JAVA que consome CPU
+				</tr>
+				<tr>
+					<th>rescldap.sh
+					<th>Gerar Senha LDAP
+				</tr>
+				<tr>
+					<th>rescueldap@ip do servidor backup
+					<th>Conectar Usuario LDAP / ip do backup
+				</tr>
+				<tr>
+					<th>rescueldap@ip do servidor backup
+					<th>Conectar Usuario LDAP / ip do backup
+				</tr>
+				<tr>
+					<th>rpm -qa | grep jre
+					<th>Verifica se a JRE está instalada
+				</tr>
+				<tr>
+					<th>rpm -qa | grep pdvcb
+					<th>Verifica a versão do aplicativo Java instalado
+				</tr>
+				<tr>
+					<th>rpm -qa | grep scope
+					<th>Visualiza a versão do Scope Client
+				</tr>
+				<tr>
+					<th>rpm -qa | grep telcarga
+					<th>Verifica a versão do aplicativo Java da telecarga
+				</tr>
+				<tr>
+					<th>sudo /tftpboot/pdv/usr/bin/recupera-db-concentradorPDV.sh
+					<th>Recupera o PostGre (Banco de Dados do Concentrador de PDV's)
+				</tr>
+				<tr>
+					<th>sudo /usr/bin/replica_rep.sh status
+					<th>Replica atualização para relógios
+				<tr>
+					<th>sudo /usr/sbin/dmidecode -s
+					<th>Verificar numero de série do servidor
+				</tr>
+				<tr>
+					<th>sudo /usr/sbin/rcapache2 start
+					<th>Startar sistema Apache
+				</tr>
+				<tr>
+					<th>sudo /usr/sbin/rcapache2 status
+					<th>verificar status sistema Apache
+				</tr>
+				</tr>
+				<tr>
+					<th>sudo /usr/sbin/rcapache2 stop
+					<th>Para sistema Apache
+				</tr>
+				<tr>
+					<th>sudo connectvirt.sh
+					<th>Entrar no servidor virtualizado
+				</tr>
+				<tr>
+					<th>sudo fix_giveroot.sh
+					<th>Recupera o servidor primário do erro: Give Root Password for Login
+				</tr>
+				<tr>
+					<th>sudo fix_users.sh
+					<th>fix em usuários com problema com tela azul e pcom desconfigurado
+				</tr>
+				<tr>
+					<th>sudo sync_catalogo.sh
+					<th>forçar Sincronismo das imagens do catalogo de imagens
+				</tr>
+				</tr>
+				<tr>
+					<th>sudo zac agp
+					<th>Confirma sincronização do servidor ZCM
+				</tr>
+				<tr>
+					<th>sudo zac bl
+					<th>Informa bundles instalados
+				</tr>
+				</tr>
+				<tr>
+					<th>top -c
+					<th>Visualiza os processos que estão rodando no servidor com descrição
+				</tr>
+				<tr>
+					<th>top
+					<th>visualiza os processos que estão rodando no servidor
+				</tr>
+				<tr>
+					<th>vi /etc/SuSE-release
+					<th>Visualiza a versão do sistema operacional do PDV
+				</tr>
+				</tr>
+				<tr>
+					<th>cat root/etc/SuSE-release
+					<th>Verificar versão do Suse
+				</tr>
+				</tr>
+				<tr>
+					<th>cat cbconfig.cfg
+					<th>Verificar versão do Suse
+				</tr>
+				<tr>
+					<th>cd tftpboot
+					<th>Pasta do arquivo
+				</tr>
+				<tr>
+					<th>sudo /usr/sbin/dmidecode -s system-serial-number
+					<th>Serial do servidor
+				</tr>
+				</tr>
+				<tr>
+					<th>recupbck 21 xxxx yyyyyyyy
+					<th>Recupera movimento de concentrador do dia (x = loja) ( y = dia, mês e ano)
+				</tr>
+				<tr>
+					<th>cat /etc/os-release | cat /etc/SuSE-release
+					<th> saber versão do sistema operacional Linux
+				</tr>
+			</table>
+		</center>
+		</font>
+		</bgcolor>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+
+@charset utf-8;
+ 		 body {
+    		background: #000000;
+  			color: #FFFFFF;
+ 			}
+		a:link {
+			color: #00FF00;
+			} 
+		a:visited {
+			color: #00FF00; 
+			} 
+		a:hover {
+			color: #FFFF00;
+			} 
+		div {
+			color :#FFFFFF; 
+			}
+		h1	{
+			color: #FFFFFF;
+			}
+		h2	{
+			color: #FFFFFF;
+			}
+		h3	{
+			color: #FFFFFF;
+		}
+		hr	{
+			color: #00000;
+			}
+		th  {
+			color: #FFFFFF
+			}
+		frame {
+			border-color: black;
+			width: 10px;
+		}
+		footer {
+			bottom: 0px;
+			position: absolute;
+     			height: 20px;
+    			width: 99%;
+    			box-shadow: 0px 0px 0px black;
+    			z-index: 1;
+			text-align:right;
+		}
+  /* mais regras CSS */
+  /* considere que essa folha de estilo demomina-se main.css */
+  

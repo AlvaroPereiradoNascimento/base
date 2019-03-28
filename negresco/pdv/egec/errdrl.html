@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Erro de rede local NEGRESCO</title>
+		<meta name="description" content="página de auxílio do sistema.">
+		<meta name="keywords" content="ajuda">
+		<link rel="stylesheet" type="text/css" href="../../main.css">
+		<head>
+			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"  />
+	</head> 
+	<body>
+		<body bgcolor="#000000">
+			<font color="#FFFFFF">
+				</br>
+				<center>
+					<table border="1">
+					<br>
+					<h1>ERRO DE REDE LOCAL</h1>
+				</center>
+				</br>
+				<p align="left">
+					Problema de comunicação dos caixas com o concentrador / servidor/ etc.</br>
+					1º Verifique o erro de rede local que ocorre no log do pdv </br>
+					Caso ocora erro de Módulo PDV        <a href="#pdv">clique aqui</a> </br>
+					Caso ocora erro de Módulo CONC PDV   <a href="#conc">clique aqui</a> </br>
+					Caso ocora erro de Módulo SGR        <a href="#sgr">clique aqui</a> </br>
+				<center>
+					<h2><a name="pdv">Módulo pdv</a></br></br></h2>
+				</center>
+				<p align="left">
+					Problema de comunicação do pdv, efetuar testes de comunicação no concentrador, servidor e  no 10.228.0.50.</br>
+					Caso comunique normalmente efetue restart do pdv.</br></br>
+				<center>
+					<h2><a name="conc">Módulo CONC PDV</a></br></br></h2>
+				</center>
+				<p align="left">
+					Problema de comunicação concentrador PDV, efetuar teste no concentrador de PDV.</br>
+					Verifique se PDV comunica dentro do concentrador.</br>
+					Caso pdv não responda ao ping dentro do concentrador:</br>
+					Caso acuse Erro de Rede Local Conc PDV - Destination Host Unreachable.</br>
+					Deve-se acionar o departamento de Redes Telecom e solicitar um clear na tabela ARP e Port Security dos Switchs. Incidente de exemplo onde foi aplicada solução é IN2036571</br>
+					Caso pdv responda ao ping dentro do concentrador:</br>
+					Eftue resart do concentrador de pdv</br></br>
+				<center>
+					<h2><a name="sgr">Módulo SGR</a></br></br></h2>
+				</center>
+				<p align="left">
+					Acessar servidor principal da filial.</br>
+					executar comandos ps -ef | grep conc e ps -ef | grep surica para verificar se o concloja e suricato estão ativos</br>
+					efetuar comando sudo conclojacb.sh</br> 
+					Selecione a opção dois do menu (carrega serviço)</br>
+					Carrege o menu do concentrador e execute as opções 2, 3, 5 e 6</br>
+					</br>
+					</br>
+				</center>
+			</font>
+	</body>
+</html>
