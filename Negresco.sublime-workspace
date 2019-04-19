@@ -1,0 +1,206 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"l",
+				"li\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<html>\n\t<head>\n\t\t<title>Erro de rede local NEGRESCO</title>\n\t\t<meta name=\"description\" content=\"página de auxílio do sistema.\">\n\t\t<meta name=\"keywords\" content=\"ajuda\">\n\t\t<head>\n\t\t\t<link rel=\"shortcut icon\" href=\"favicon.ico\" type=\"image/x-icon\"  />\n\t</head>\n\t</head> \n\t<body>\n\t\t<body bgcolor=\"#000000\">\n\t\t\t<font color=\"#FFFFFF\">\n\t\t\t\t</br>\n\t\t\t\t<center>\n\t\t\t\t\t<table border=\"1\">\n\t\t\t\t\t<br>\n\t\t\t\t\t<h1>ERRO DE REDE LOCAL</h1>\n\t\t\t\t</center>\n\t\t\t\t</br>\n\t\t\t\t<p align=\"left\">\n\t\t\t\t\tProblema de comunicação dos caixas com o concentrador / servidor/ etc.</br>\n\t\t\t\t\t1º Verifique o erro de rede local que ocorre no log do pdv </br>\n\t\t\t\t\tCaso ocora erro de Módulo PDV        <a href=\"#pdv\">clique aqui</a> </br>\n\t\t\t\t\tCaso ocora erro de Módulo CONC PDV   <a href=\"#conc\">clique aqui</a> </br>\n\t\t\t\t\tCaso ocora erro de Módulo SGR        <a href=\"#sgr\">clique aqui</a> </br>\n\t\t\t\t<center>\n\t\t\t\t\t<h2><a name=\"pdv\">Módulo pdv</a></br></br></h2>\n\t\t\t\t</center>\n\t\t\t\t<p align=\"left\">\n\t\t\t\t\tProblema de comunicação do pdv, efetuar testes de comunicação no concentrador, servidor e  no 10.228.0.50.</br>\n\t\t\t\t\tCaso comunique normalmente efetue restart do pdv.</br></br>\n\t\t\t\t<center>\n\t\t\t\t\t<h2><a name=\"conc\">Módulo CONC PDV</a></br></br></h2>\n\t\t\t\t</center>\n\t\t\t\t<p align=\"left\">\n\t\t\t\t\tProblema de comunicação concentrador PDV, efetuar teste no concentrador de PDV.</br>\n\t\t\t\t\tVerifique se PDV comunica dentro do concentrador.</br>\n\t\t\t\t\tCaso pdv não responda ao ping dentro do concentrador:</br>\n\t\t\t\t\tCaso acuse Erro de Rede Local Conc PDV - Destination Host Unreachable.</br>\n\t\t\t\t\tDeve-se acionar o departamento de Redes Telecom e solicitar um clear na tabela ARP e Port Security dos Switchs. Incidente de exemplo onde foi aplicada solução é IN2036571</br>\n\t\t\t\t\tCaso pdv responda ao ping dentro do concentrador:</br>\n\t\t\t\t\tEftue resart do concentrador de pdv</br></br>\n\t\t\t\t<center>\n\t\t\t\t\t<h2><a name=\"sgr\">Módulo SGR</a></br></br></h2>\n\t\t\t\t</center>\n\t\t\t\t<p align=\"left\">\n\t\t\t\t\tAcessar servidor principal da filial.</br>\n\t\t\t\t\texecutar comandos ps -ef | grep conc e ps -ef | grep surica para verificar se o concloja e suricato estão ativos</br>\n\t\t\t\t\tefetuar comando sudo conclojacb.sh</br> \n\t\t\t\t\tSelecione a opção dois do menu (carrega serviço)</br>\n\t\t\t\t\tCarrege o menu do concentrador e execute as opções 2, 3, 5 e 6</br>\n\t\t\t\t\t</br>\n\t\t\t\t\t</br>\n\t\t\t\t</center>\n\t\t\t</font>\n\t</body>\n</html>",
+			"settings":
+			{
+				"buffer_size": 2344,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/7700143421/Desktop/sublime/teste.sublime-project"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2344,
+								2344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 657.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Negresco.sublime-project",
+	"replace":
+	{
+		"height": 73.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

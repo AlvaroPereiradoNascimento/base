@@ -1,0 +1,34 @@
+<html> 
+<head> 
+<title>BASE NEGRESCO</title>
+<meta name="description" content="página de auxílio do sistema.">
+<meta name="keywords" content="ajuda">
+</head> 
+<body>
+<body bgcolor="#000000">
+<font color="#FFFFFF">
+</br>
+
+
+
+
+
+
+</br>
+</br>
+</font>
+</body> 
+</html>
+
+TEMPLATE DE PLANILHA
+
+<!--Inicio da tabela-->
+
+</table>
+<center><table border="1">
+
+<br><h2>TÍTULO CENTRALIZADO BLBLABLABLABL</h2>
+<tr>
+<th><font color="#FFFFFF">BLABLABLALBABALBALBLA<th><font color="#FFFFFF">BLABLALBALABLABL</th>
+</td>
+</tr>
