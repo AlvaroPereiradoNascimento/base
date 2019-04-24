@@ -1,0 +1,250 @@
+
+	@charset utf-8;
+	@import url('https://fonts.googleapis.com/css?family=Aldrich|Armata|Cutive+Mono|IBM+Plex+Mono|Iceland|Nova+Square|Orbitron|Play|Quattrocento|Quattrocento+Sans|Ubuntu|VT323');
+	/* possiveis fontes para uso.
+		VT323
+		Ubuntu
+		Quattrocento Sans
+		Quattrocento
+		Play
+		Orbitron
+		Nova Square
+		Iceland
+		IBM Plex Mono
+		Cutive Mono
+		Aldrich
+		Armata
+		Century
+	*/
+	html{
+		font-family: Ubuntu,Quattrocento Sans,Quattrocento,Play,Orbitron,Nova Square,Iceland,IBM Plex Mono,Cutive Mono,Aldrich,Armata,Century;
+		-ms-text-size-adjust:100%;
+		-webkit-text-size-adjust:100%
+	}
+	body {
+		background: #000000;
+			color: #FFFFFF;
+			}
+		/* barra de rolagem customizada*/
+		::-webkit-scrollbar {
+	  width: 10px;
+	  height: 10px;
+	  -webkit-border-radius: 16px;
+	  -webkit-scrollbar-corner:block;
+
+	}
+
+	::-webkit-scrollbar-track-piece {
+	  background-color: #000000;
+	  -webkit-border-radius: 3px;
+	}
+
+	::-webkit-scrollbar-thumb:vertical {
+	  height: 5px;
+	  background-color: #00FF00;
+	  -webkit-border-radius: 3px;
+	}
+
+	::-webkit-scrollbar-thumb:horizontal {
+	  width: 5px;
+	  background-color: #00FF00;
+	  -webkit-border-radius: 3px;
+	}
+	::-webkit-scrollbar-corner{color:#000000}
+	/*fim da customização da barra de rolagem*/
+	.prin {
+			background: none;
+			color: #FFFFFF;
+			}
+	a:link {color: #00FF00} 
+	a:visited {color: #00FF00} 
+	a:hover {color: #FFFF00;}
+	div {color :#FFFFFF}
+	h1	{
+		color: #FFFFFF;
+		text-align: center;
+		}
+	h2	{
+		color: #FFFFFF;
+		text-align: center;
+		}
+	h3	{
+		color: #FFFFFF;
+		text-align: center;
+		color: #00000;
+		}
+	h4	{
+		color: #FFFFFF;
+		text-align: center;
+		color: #00000;
+		}	
+	th  {color: #FFFFFF}
+	frame {
+		border-color: none;
+		width: 10px;
+		}
+	footer {
+		bottom: 0px;
+		position: absolute;
+			height: 20px;
+		width: 99%;
+		box-shadow: 0px 0px 0px black;
+		z-index: 1;
+		text-align:right;
+		}
+	ol{
+		text-align: center;
+		width: auto;
+		padding:5px;
+		list-style: none; 
+		counter-reset: li
+		}
+	li::before {
+		content: counter(li);
+	 	color: #FFFF00;
+			display: inline-block; 
+			width: 1em;
+			margin-left: -1em
+			}
+		li {counter-increment: li}
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	img.corrige{
+		width: 70%;
+		height: 50%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+		}
+	.fonte {
+		bottom: 0px;
+		position: relative;
+			height: 20px;
+		width: 99%;
+		box-shadow: 0px 0px 0px black;
+		z-index: 1;
+		text-align:right;
+		width: 99%;
+		}
+	importante {
+		color: #FFFF00;
+		text-decoration: underline;
+		font-family: 'Ubuntu',serif;
+		}
+	.head{
+		height:  35px;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		text-align: center;
+
+		vertical-align: top;
+		}
+	.menu{
+		width: 300px;
+		height: 100%;
+		border: none;
+		position: absolute;
+		}
+	.example1 {
+	  	height: 100%;
+	  	width: ?;
+	  	bottom: 0;
+		left: 0;
+	 	resize: both;
+	  	position: absolute;
+	  	z-index: 1;
+	  	align-self: right;
+	  	}
+	.example2 {
+	  	height: 94%;
+	  	width: 100%;
+	  	bottom: 0;
+	  	right: 0;
+	 	resize: both;
+	  	position: absolute;
+	  	z-index: 0;
+	  	scroll-behavior: auto;
+		}
+	iframe {
+	  	width: 100%;
+	  	height: 99%;
+	  	border: none;
+	  	position: absolute;
+		}
+	.iframe {
+	  	width: 100%;
+	  	height: 100%;
+	  	border: none;
+	  	position: absolute;
+		}
+	.top{top: 0}
+	.midler {
+		right: 280px;
+		top: -1;
+	    position: absolute;
+	  	height: 50%;
+	  	width: 50%;
+	  	box-shadow: 0px 0px 0px black;
+	  	z-index: 1;
+	  	text-align:right;
+	    }
+	.midlel {
+		top: 0;
+	  	left: 280px;
+	  	position: absolute;
+	  	height: 50%;
+	  	width: 50%;
+	  	box-shadow: 0px 0px 0px black;
+	  	z-index: 1;
+	  	text-align:left;
+	    }
+	/*Inicio do conjunto para o sanduíche */
+	.nav-toggle {
+		display: block;
+		padding: 10px 10px 15px 10px;
+		background: #fff;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 50;
+		}
+	.hamburger {
+		width: 1.08em;
+		position: relative;
+		display: inline-block;
+		height: 0.6em;
+		font-size: 1.2em;
+		background: #fff;
+		}
+	.hamburger span {
+		display: block;
+		width: 33px;
+		height: 4px;
+		margin-bottom: 5px;
+		position: relative;
+		background: #cdcdcd;
+		border-radius: 3px;
+		}
+		/*fim do conjunto sanduiceh*/
+		/* alterador de fonte*/
+	.Aldrich{font-family: 'Aldrich', sans-serif	}
+	.Armata{font-family: 'Armata', sans-serif}
+	.CutiveMono{font-family: 'Cutive Mono', monospace}
+	.IBMPlex{font-family: 'IBM Plex Mono', monospace}
+	.Iceland{font-family: 'Iceland', cursive}
+	.NovaSquare{font-family: 'Nova Square', cursive}
+	.Orbiton{font-family: 'Orbitron', sans-serif;}
+	.Play{font-family: 'Play', sans-serif}
+	.QuattrocentoSans{font-family: 'Quattrocento Sans', sans-serif}
+	.Quattrocento{font-family: 'Quattrocento', serif;}
+	.Ubuntu{ font-family: 'Ubuntu', sans-serif}
+	.VT323{font-family: 'VT323', monospace}
+	/* mais regras CSS */
+	/* considere que essa folha de estilo demomina-se main.css */
+  
