@@ -19,7 +19,8 @@
 	html{
 		font-family: Ubuntu,Quattrocento Sans,Quattrocento,Play,Orbitron,Nova Square,Iceland,IBM Plex Mono,Cutive Mono,Aldrich,Armata,Century;
 		-ms-text-size-adjust:100%;
-		-webkit-text-size-adjust:100%
+		-webkit-text-size-adjust:100%;
+		charset:utf-8;
 	}
 	body {
 		background: #000000;
@@ -102,11 +103,11 @@
 	li::before {
 		content: counter(li);
 	 	color: #FFFF00;
-			display: inline-block; 
-			width: 1em;
-			margin-left: -1em
-			}
-		li {counter-increment: li}
+		display: inline-block; 
+		width: 1em;
+		margin-left: -1em
+		}
+	li {counter-increment: li}
 	img{
 		display: block;
 		margin-left: auto;
@@ -162,7 +163,7 @@
 	  	align-self: right;
 	  	}
 	.example2 {
-	  	height: 94%;
+	  	height: 95.629%;
 	  	width: 100%;
 	  	bottom: 0;
 	  	right: 0;

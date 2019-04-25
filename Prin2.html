@@ -4,10 +4,26 @@
 		 <TITLE>Base Terminal</TITLE>
 		 <link rel="icon" href="imagemgif.gif" type="image/gif"></link>
 		<link rel="stylesheet" type="text/css" href="./css/main.css"/>
+		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
 		<script>
-		  function resizeIframe(obj) {
-		    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-		  }
+			 function resizeIframe(obj) {
+			    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+			 }
+			  window.Carregar = function(){
+			    var elemDiv = document.createElement('div');
+			    elemDiv.style.cssText = 'position:fixed;top:0;left:0;z-index:100;background:#000;color:#fff;';
+			    elemDiv.appendChild(document.createTextNode("Carregando..."));
+			    elemDiv.setAttribute("id", "carregando");
+			    document.body.appendChild(elemDiv);
+			}
+
+			function onLoadHandler() {
+			    var element = document.getElementById("carregando");
+			    if(element){
+			        element.parentNode.removeChild(element);
+			    }
+			document.getElementById("Carrega").location.reload();
+			document.getElementById("Carrega").src = "null.html";
 		</script>
 	</HEAD>
 	<body>
@@ -16,7 +32,7 @@
 		  
 		
  		<div class="example2" >
- 			<iframe   name = Carrega src="null.html"  scrolling="yes" ></iframe>
+ 			<iframe   name = "Carrega" src="null.html"  scrolling="yes" onload="onLoadHandler()"></iframe>
  		</div>
  		<div class="example1">
  			<iFRAME class="menu" name = "Principal" src="index.html"  frameborder="0" scrolling="yes" onload="resizeIframe(Principal)" ></iFRAME>
