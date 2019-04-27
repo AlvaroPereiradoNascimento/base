@@ -19,8 +19,7 @@
 	html{
 		font-family: Ubuntu,Quattrocento Sans,Quattrocento,Play,Orbitron,Nova Square,Iceland,IBM Plex Mono,Cutive Mono,Aldrich,Armata,Century;
 		-ms-text-size-adjust:100%;
-		-webkit-text-size-adjust:100%;
-		charset:utf-8;
+		-webkit-text-size-adjust:100%
 	}
 	body {
 		background: #000000;
@@ -95,15 +94,16 @@
 		}
 	ol{
 		text-align: center;
+		align-content: center;
 		width: auto;
 		padding:5px;
 		list-style: none; 
-		counter-reset: li
+		counter-reset: li;
 		}
 	li::before {
 		content: counter(li);
 	 	color: #FFFF00;
-		display: inline-block; 
+		display: inline; 
 		width: 1em;
 		margin-left: -1em
 		}
@@ -113,9 +113,19 @@
 		margin-left: auto;
 		margin-right: auto;
 		}
+	/* correção para imagem horizontal*/
 	img.corrige{
 		width: 70%;
 		height: 50%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+		}
+	/* correção para imagem vertical*/
+	img.corrige2{
+		width: 20%;
+		height: 15%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -163,7 +173,7 @@
 	  	align-self: right;
 	  	}
 	.example2 {
-	  	height: 95.629%;
+	  	height: 94%;
 	  	width: 100%;
 	  	bottom: 0;
 	  	right: 0;
