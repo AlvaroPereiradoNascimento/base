@@ -26,10 +26,11 @@ body {
 
 .barra {
 	width: 300px;
-	height: 99%;
+	height: 95.5%;
 	position: fixed;
 	background-color: #191970;
-	
+	top: 0;
+	bottom: -0;	
 	left: -300px;
 	-webkit-transition: all .25s linear;
 	   -moz-transition: all .25s linear;
@@ -37,6 +38,7 @@ body {
 	     -o-transition: all .25s linear;
 	        transition: all .25s linear;
 	margin-top: 35px;
+	
 	
 }
 /* Comando barra2  possui preenchimento no topo de 50 px criando uma borda de acesso */
