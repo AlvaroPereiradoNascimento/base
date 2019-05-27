@@ -67,22 +67,51 @@
 	h1	{
 		color: #FFFFFF;
 		text-align: center;
-		}
+	}
 	h2	{
 		color: #FFFFFF;
 		text-align: center;
-		}
+	}
 	h3	{
 		color: #FFFFFF;
 		text-align: center;
 		color: #00000;
-		}
+	}
 	h4	{
 		color: #FFFFFF;
 		text-align: center;
 		color: #00000;
-		}	
-	th  {color: #FFFFFF}
+	}	
+	th  {
+		color: #FFFFFF;
+		font-size: 14px;
+	}
+	table{
+		
+		align-content: center;
+	}
+	.tabmain{
+		text-align: center;
+		width:75%;
+		padding:center;
+		table-layout: 3;
+		font-size: 20px;
+	}
+	.tabsub{
+		text-align: center;
+		width: 30%;
+		padding:center;
+		empty-cells:hide;
+		font-size: 18px;
+	}
+	.tabsubsub{
+		text-align: center;
+		width: 30%;
+		padding:center;
+		empty-cells:hide;
+		font-size: 16px;
+	}
+
 	frame {
 		border-color: none;
 		width: 10px;
@@ -99,19 +128,11 @@
 	ol{
 		text-align: center;
 		align-content: center;
-		width: auto;
-		padding:5px;
-		list-style: none; 
-		counter-reset: li;
-		}
-	li::before {
-		content: counter(li);
-	 	color: #FFFF00;
-		display: inline; 
-		width: 1em;
-		margin-left: -1em
-		}
-	li {counter-increment: li}
+	}
+	ul{
+		text-align: center;
+		align-content: center;
+	}
 	img{
 		display: block;
 		margin-left: auto;
@@ -128,8 +149,16 @@
 		}
 	/* correção para imagem vertical*/
 	img.corrige2{
-		width: 20%;
-		height: 15%;
+		width: 30%;
+		height: 25%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+		}
+	img.corrige3{
+		width: 5%;
+		height: 10%;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -158,7 +187,17 @@
 		color: #FFFF00;
 		text-decoration: underline;
 		font-family: 'Ubuntu',serif;
+		text-align: center;
 		}
+	.red{
+		color: red;
+	}
+	.blue{
+		color: blue;
+	}
+	.green{
+		color: green;
+	}
 	.head{
 		height:  35px;
 		width: 100%;
@@ -185,10 +224,10 @@
 	  	position: absolute;
 	  	z-index: 1;
 	  	align-self: right;
-	  	opacity: 0.93;
+	  	opacity: 0.8;
 	  	}
 	.example2 {
-	  	height: 95%;
+	  	height: 94.7%;
 	  	width: 100%;
 	  	bottom: 0;
 	  	right: 0;
