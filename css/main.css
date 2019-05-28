@@ -113,10 +113,12 @@
 	}
 	.tabmain{
 		text-align: center;
-		width:75%;
+		width:60%;
 		padding:center;
 		table-layout: 3;
 		font-size: 20px;
+		max-width:75%;
+		height:auto;
 	}
 	.tabsub{
 		text-align: center;
@@ -124,6 +126,8 @@
 		padding:center;
 		empty-cells:hide;
 		font-size: 18px;
+		max-width:30%;
+		height:auto;
 	}
 	.tabsubsub{
 		text-align: center;
@@ -131,6 +135,8 @@
 		padding:center;
 		empty-cells:hide;
 		font-size: 16px;
+		max-width:30%;
+		height:auto;
 	}
 
 	frame {
