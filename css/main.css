@@ -43,8 +43,9 @@
 	}
 	body {
 		background: #000000;
-			color: #FFFFFF;
-			}
+		color: #FFFFFF;
+		overflow: auto;
+	}
 		/* barra de rolagem customizada*/
 		::-webkit-scrollbar {
 	  width: 10px;
@@ -79,8 +80,8 @@
 			bottom: 0;
 			width: 100%;
 			height: 50%;
-			}
-	a   { font-size: 16px; }
+	}
+	a   { font-size: 1rem; }
 	a:link {color: #00FF00} 
 	a:visited {color: #00FF00} 
 	a:hover {color: #FFFF00;}
@@ -113,12 +114,10 @@
 	}
 	.tabmain{
 		text-align: center;
-		width:60%;
+		width:75%;
 		padding:center;
 		table-layout: 3;
 		font-size: 20px;
-		max-width:75%;
-		height:auto;
 	}
 	.tabsub{
 		text-align: center;
@@ -126,8 +125,6 @@
 		padding:center;
 		empty-cells:hide;
 		font-size: 18px;
-		max-width:30%;
-		height:auto;
 	}
 	.tabsubsub{
 		text-align: center;
@@ -135,24 +132,21 @@
 		padding:center;
 		empty-cells:hide;
 		font-size: 16px;
-		max-width:30%;
-		height:auto;
 	}
 
 	frame {
 		border-color: none;
 		width: 10px;
+		border: none;
 		}
 	footer {
-		right: 0.1%;
-		bottom: 0;
+		bottom: 2.52;
+		right: 0;
 		position: absolute;
-		max-height: 2.7%;
+		max-height: 2%;
 		height: auto;
 		max-width: 50%;
 		width: auto;
-		box-shadow: 0px 0px 0px black;
-		z-index: 1;
 		text-align:right;
 		}
 	ol{
@@ -206,12 +200,13 @@
 	.fonte {
 		bottom: 0px;
 		position: relative;
-			height: 20px;
-		width: 99%;
+		max-height: 2.5%;
+		width: auto;
+		max-width: 99%;
+		width: auto;
 		box-shadow: 0px 0px 0px black;
 		z-index: 1;
 		text-align:right;
-		width: 99%;
 		}
 	importante {
 		color: #FFFF00;
@@ -229,13 +224,13 @@
 		color: green;
 	}
 	.head{
-		height:  35px;
+		max-height:  35px;
 		width: 100%;
 		top: 0;
 		left: 0;
 		position: absolute;
 		text-align: center;
-
+		z-index: 1;
 		vertical-align: top;
 		}
 	.menu{
@@ -245,38 +240,59 @@
 		position: absolute;
 		}
 	.example1 {
-	  	height: 100%;
+	  	max-height: 100%;
+	  	height: auto;
 	  	width: auto;
+
 	  	bottom: 0;
 		left: 0;
 		top: 0;
-	 	resize: both;
+	 	resize: none;
 	  	position: absolute;
-	  	z-index: 1;
+	  	z-index: 2;
 	  	align-self: right;
 	  	opacity: 0.8;
 	  	}
 	.example2 {
-	  	max-height: 95.845027%;
-	  	height: auto;
-	  	width: 100%;
-	  	bottom: 1%;
-	  	right: 0;
+	  	height: 100%;
+	  	width: 95%;
 	  	left: 0;
 	  	top: 0;
-	  	margin-top: 39.953px;
-	 	resize: both;
-	  	position: absolute;
+	  	right: 0;
+	  	bottom: 0;
+	  	resize: both;
 	  	z-index: 0;
-	  	scroll-behavior: auto;
-	  	scro
+	  	overflow: hidden;
+	  	overflow-x: hidden;
+	  	overflow-y: hidden;
 		}
 	iframe {
-	  	width: 100%;
-	  	height: 99%;
+	  	width: 99%;
+	  	height: 95%;
 	  	border: none;
 	  	position: absolute;
+	  	top: 0;
+    	left: 0;
 		}
+	.iframe-container {
+	  overflow: hidden;
+	  padding-top: 56.25%;
+	  position: relative;
+	}
+	 
+	.iframe-container iframe {
+	   border: 0;
+	   height: 100%;
+	   left: 0;
+	   position: absolute;
+	   top: 0;
+	   width: 100%;
+	}
+	 
+	/* 4x3 Aspect Ratio */
+	.iframe-container-4x3 {
+	  padding-top: 75%;
+	}
 	.iframe {
 	  	width: 100%;
 	  	height: 100%;
