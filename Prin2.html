@@ -7,15 +7,12 @@
 		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<script>
-			 function resizeIframe(obj) {
-			    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'em';
-			 }
-			  window.Carregar = function(){
-			    var elemDiv = document.createElement('div');
-			    elemDiv.style.cssText = 'position:fixed;top:0;left:0;z-index:100;background:#000;color:#fff;';
-			    elemDiv.appendChild(document.createTextNode("Carregando..."));
-			    elemDiv.setAttribute("id", "carregando");
-			    document.body.appendChild(elemDiv);
+			window.Carregar = function(){
+		    var elemDiv = document.createElement('div');
+		    elemDiv.style.cssText = 'position:fixed;top:0;left:0;z-index:100;background:#000;color:#fff;';
+		    elemDiv.appendChild(document.createTextNode("Carregando..."));
+		    elemDiv.setAttribute("id", "carregando");
+		    document.body.appendChild(elemDiv);
 			}
 		</script>
 	</HEAD>
@@ -28,8 +25,7 @@
  			<iframe   name = "Carrega" src="null.html" class="iframe" allowfullscreen></iframe>
  		</div>
  		<div class="example1">
- 			<iFRAME class="menu" name = "Principal" src="index.html"  frameborder="0" scrolling="yes" onload="resizeIframe(Principal)" ></iFRAME>
- 			
+ 			<iFRAME class="menu" name = "Principal" src="index.html"  frameborder="0" scrolling="yes" ></iFRAME>
  		</div >
 		<iframe  class="head" src="head.html" name ="head"   scrolling="no"   frameborder="0" ></iframe> 
 
