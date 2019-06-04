@@ -75,7 +75,6 @@
 		a  { font-size: 0.6rem; }
 		
 	}
-	
 	html{
 		font-family: Ubuntu,Quattrocento Sans,Quattrocento,Play,Orbitron,Nova Square,Iceland,IBM Plex Mono,Cutive Mono,Aldrich,Armata,Century;
 		-ms-text-size-adjust:100%;
@@ -294,7 +293,6 @@
 		top: 0;
 	  	position: absolute;
 	  	z-index: 2;
-	  	align-self: right;
 	  	opacity: 0.8;
 	  	}
 	.example2 {
@@ -431,7 +429,7 @@
 }
 
 .icone {
-	font-size: 3.5em;
+	font-size: 1.9em;
 	position: fixed;
 	z-index: 2;
 	cursor: pointer;
@@ -441,19 +439,19 @@
 }
 
 .barra {
-	width: 300px;
-	height: 95.5%;
-	position: fixed;
-	background-color: #191970;
-	top: 0;
-	bottom: -0;	
-	left: -300px;
-	-webkit-transition: all .25s linear;
-	   -moz-transition: all .25s linear;
+	width: 99.3%;
+    height: 100%;
+    position: fixed;
+    background-color: #191970;
+    top: 0;
+    bottom: -0;
+    left: -300px;
+	    -webkit-transition: all .25s linear;
+	    -moz-transition: all .25s linear;
 	    -ms-transition: all .25s linear;
-	     -o-transition: all .25s linear;
-	        transition: all .25s linear;
-	margin-top: 3%;
+	    -o-transition: all .25s linear;
+	    transition: all .25s linear;
+    margin-top: 16%;
 	
 	
 }
