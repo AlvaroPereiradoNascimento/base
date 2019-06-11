@@ -16,6 +16,10 @@
 		Armata
 		Century
 	*/
+	@viewport{
+
+	}
+
 	@media screen and (max-width:2560px) {
 		h1 { font-size: 3.8rem; }
 		h2 { font-size: 3.4rem; }
@@ -42,39 +46,14 @@
 	 	a  { font-size:1.2rem; }
 	}
 	@media screen and (max-width: 1280px) {
-		h1 { font-size: 2.9rem; }
-		h2 { font-size: 2.6rem; }
-		h3 { font-size: 2.3rem; }
-		h4 { font-size: 1.9rem; }
+		h1 { font-size: 2.3rem; }
+		h2 { font-size: 2rem; }
+		h3 { font-size: 1.7rem; }
+		h4 { font-size: 1.3rem; }
 	 	body {font-size: 1rem;}
 		a  { font-size: 1rem; }
 	}
-	@media screen and (max-width: 960px) {
-		h1 { font-size: 1.8rem; }
-		h2 { font-size: 1.6rem; }
-		h3 { font-size: 1.4rem; }
-		h4 { font-size: 1.2rem; }
-	 	body {font-size: 1em;}
-		a  { font-size: 1rem; }
-	}
-	@media screen and (max-width: 640px) { 
-		h1 { font-size: 1.1rem; }
-		h2 { font-size: 1rem; }
-		h3 { font-size: 0.9rem; }
-		h4 { font-size: 0.7rem; }
-	 	body {font-size: 0.8em;}
-		a  { font-size: 0.8rem; }
-		
-	}
-	@media screen and (max-width: 320px) { 
-		h1 { font-size: 1rem; }
-		h2 { font-size: 0.9rem; }
-		h3 { font-size: 0.8rem; }
-		h4 { font-size: 0.7rem; }
-	 	body {font-size: 0.6em;}
-		a  { font-size: 0.6rem; }
-		
-	}
+	
 	html{
 		font-family: Ubuntu,Quattrocento Sans,Quattrocento,Play,Orbitron,Nova Square,Iceland,IBM Plex Mono,Cutive Mono,Aldrich,Armata,Century;
 		-ms-text-size-adjust:100%;
@@ -143,6 +122,11 @@
 		color: #00000;
 	}
 	h4	{
+		color: #FFFFFF;
+		text-align: center;
+		color: #00000;
+	}
+	h5	{
 		color: #FFFFFF;
 		text-align: center;
 		color: #00000;
@@ -440,7 +424,7 @@
 
 .barra {
 	width: 99.3%;
-    height: 100%;
+    height: 94.5%;
     position: fixed;
     background-color: #191970;
     top: 0;
